@@ -1,0 +1,17 @@
+C:\Users\lokma\Desktop\LengthKullanımı\LengthKullanımı\bin\Debug\net6.0-windows\LengthKullanımı.exe
+C:\Users\lokma\Desktop\LengthKullanımı\LengthKullanımı\bin\Debug\net6.0-windows\LengthKullanımı.deps.json
+C:\Users\lokma\Desktop\LengthKullanımı\LengthKullanımı\bin\Debug\net6.0-windows\LengthKullanımı.runtimeconfig.json
+C:\Users\lokma\Desktop\LengthKullanımı\LengthKullanımı\bin\Debug\net6.0-windows\LengthKullanımı.dll
+C:\Users\lokma\Desktop\LengthKullanımı\LengthKullanımı\bin\Debug\net6.0-windows\LengthKullanımı.pdb
+C:\Users\lokma\Desktop\LengthKullanımı\LengthKullanımı\obj\Debug\net6.0-windows\LengthKullanımı.csproj.AssemblyReference.cache
+C:\Users\lokma\Desktop\LengthKullanımı\LengthKullanımı\obj\Debug\net6.0-windows\LengthKullanımı.Form1.resources
+C:\Users\lokma\Desktop\LengthKullanımı\LengthKullanımı\obj\Debug\net6.0-windows\LengthKullanımı.csproj.GenerateResource.cache
+C:\Users\lokma\Desktop\LengthKullanımı\LengthKullanımı\obj\Debug\net6.0-windows\LengthKullanımı.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lokma\Desktop\LengthKullanımı\LengthKullanımı\obj\Debug\net6.0-windows\LengthKullanımı.AssemblyInfoInputs.cache
+C:\Users\lokma\Desktop\LengthKullanımı\LengthKullanımı\obj\Debug\net6.0-windows\LengthKullanımı.AssemblyInfo.cs
+C:\Users\lokma\Desktop\LengthKullanımı\LengthKullanımı\obj\Debug\net6.0-windows\LengthKullanımı.csproj.CoreCompileInputs.cache
+C:\Users\lokma\Desktop\LengthKullanımı\LengthKullanımı\obj\Debug\net6.0-windows\LengthKullanımı.dll
+C:\Users\lokma\Desktop\LengthKullanımı\LengthKullanımı\obj\Debug\net6.0-windows\refint\LengthKullanımı.dll
+C:\Users\lokma\Desktop\LengthKullanımı\LengthKullanımı\obj\Debug\net6.0-windows\LengthKullanımı.pdb
+C:\Users\lokma\Desktop\LengthKullanımı\LengthKullanımı\obj\Debug\net6.0-windows\LengthKullanımı.genruntimeconfig.cache
+C:\Users\lokma\Desktop\LengthKullanımı\LengthKullanımı\obj\Debug\net6.0-windows\ref\LengthKullanımı.dll
