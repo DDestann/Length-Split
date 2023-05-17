@@ -98,6 +98,7 @@
             label6.Name = "label6";
             label6.Size = new Size(0, 15);
             label6.TabIndex = 2;
+            label6.Text = "En kısa kelime";
             // 
             // Form1
             // 

@@ -20,80 +20,83 @@ namespace LengthKullanımı
 
 
 
+        int BoslukDahil = 0;
+        int KelimeSayisi = 0;
+        int uzunluk = 0;
+        string UzunKelime = null;
+
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
-            int Bosluk = 0;
-            int BoslukDahil = 0;
-            int KelimeSayisi = 0;
-            int uzunluk = 0;
-            string UzunKelime = null;
-            int Kisa = 0;
-            string KisaKelime = null;
-
 
 
             BoslukDahil = textBox1.Text.Length;
             label1.Text = "Boşluk Dahil Karakter Sayısı " + BoslukDahil.ToString();
 
-            string[] Kelime = textBox1.Text.Split(' ');
-            KelimeSayisi = Kelime.Count();
-            label2.Text = KelimeSayisi.ToString();
+           
+           
 
+            List<string> Kelimeler = new List<string>();
 
-
-
-
-        int[] Kelimelength = new int[5];
-            int index = 0;
-            foreach (string item in Kelime)
-            {
-                index++;
-                Kisa = item.Length;
-                if (item.Length > uzunluk)
-                {
-                    UzunKelime = item;
-                    uzunluk = item.Length;
-
-                }
-                
-                    Kelimelength[index] = Kisa;
-                
-            }
-            Array.Sort(Kelimelength);
-
-            foreach (var item in Kelimelength)
-            {
-                label6.Text += item;
-
-            }
-
-            //for (int i = 0; i < Kelime.Length; i++)
-            //{
-
-            //}
-
-            /*label6.Text = Kelimelength.ToString();*/ /*KisaKelime + " / " + Kisa.ToString();*/
-            label5.Text = UzunKelime + " / " + uzunluk.ToString();
-
-
-
-
-
+            int Bosluk = 0;
             for (int i = 0; i < textBox1.Text.Length; i++)
             {
                 if (textBox1.Text[i] == ' ')
                 {
                     Bosluk++;
+                    Kelimeler.Add(textBox1.Text[i].ToString());
                 }
+               
+
+
             }
             label3.Text = "boşluk " + Bosluk;
+
+            label2.Text = "Kelime Sayısı " + Kelimeler.Count().ToString();
 
             if (Bosluk > 0)
             {
                 label4.Text = "Karakter Sayısı " + (BoslukDahil - Bosluk).ToString();
             }
+
+
+
+            string[] Kelime = textBox1.Text.Split(' ');
+
+            List<int> Kelimelength = new List<int>();
+
+            foreach (string item in Kelime)
+            {
+
+
+                if (item.Length > uzunluk)
+                {
+                   // UzunKelime = item;
+                    uzunluk = item.Length;
+
+                }
+
+                Kelimelength.Add(item.Length);
+
+            }
+
+            Kelimelength.Sort();
+
+
+            for (int i = 0; i < Kelimelength.Count; i++)
+            {
+                if (Kelimelength[i] > 0)
+                {
+                    label6.Text = "En kısa Kelime/Karakter sayısı= " + Kelimelength[i].ToString();
+                    break;
+                }
+            }
+
+
+            label5.Text = /*UzunKelime + " / "*/ "En Uzun Kelime/Karakter sayısı= " + uzunluk.ToString();
+
+
+
         }
     }
 }
