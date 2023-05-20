@@ -28,90 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
             textBox1 = new TextBox();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
+            lblKisa = new Label();
+            lblUzun = new Label();
+            lblBosluk = new Label();
+            lblKelime = new Label();
+            lblKarakter = new Label();
+            lblBoslukDahil = new Label();
             SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(13, 206);
-            label1.Name = "label1";
-            label1.Size = new Size(153, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Boşluk Dahil Karakter Sayısı ";
+            lblKisa.AutoSize = true;
+            lblKisa.Location = new Point(393, 250);
+            lblKisa.Name = "lblKisa";
+            lblKisa.Size = new Size(83, 15);
+            lblKisa.TabIndex = 7;
+            lblKisa.Text = "En Kısa Kelime";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(12, 259);
-            label2.Name = "label2";
-            label2.Size = new Size(78, 15);
-            label2.TabIndex = 1;
-            label2.Text = "Kelime Sayısı ";
+            lblUzun.AutoSize = true;
+            lblUzun.Location = new Point(393, 197);
+            lblUzun.Name = "lblUzun";
+            lblUzun.Size = new Size(87, 15);
+            lblUzun.TabIndex = 8;
+            lblUzun.Text = "En uzun kelime";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(13, 288);
-            label3.Name = "label3";
-            label3.Size = new Size(77, 15);
-            label3.TabIndex = 2;
-            label3.Text = "Boşluk Sayısı ";
+            lblBosluk.AutoSize = true;
+            lblBosluk.Location = new Point(98, 279);
+            lblBosluk.Name = "lblBosluk";
+            lblBosluk.Size = new Size(77, 15);
+            lblBosluk.TabIndex = 9;
+            lblBosluk.Text = "Boşluk Sayısı ";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(12, 21);
+            textBox1.Location = new Point(97, 12);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(567, 169);
-            textBox1.TabIndex = 3;
+            textBox1.TabIndex = 10;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(13, 232);
-            label4.Name = "label4";
-            label4.Size = new Size(85, 15);
-            label4.TabIndex = 0;
-            label4.Text = "Karakter Sayısı ";
+            lblKelime.AutoSize = true;
+            lblKelime.Location = new Point(97, 250);
+            lblKelime.Name = "lblKelime";
+            lblKelime.Size = new Size(78, 15);
+            lblKelime.TabIndex = 6;
+            lblKelime.Text = "Kelime Sayısı ";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(308, 206);
-            label5.Name = "label5";
-            label5.Size = new Size(87, 15);
-            label5.TabIndex = 2;
-            label5.Text = "En uzun kelime";
+            lblKarakter.AutoSize = true;
+            lblKarakter.Location = new Point(98, 223);
+            lblKarakter.Name = "lblKarakter";
+            lblKarakter.Size = new Size(85, 15);
+            lblKarakter.TabIndex = 4;
+            lblKarakter.Text = "Karakter Sayısı ";
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(308, 259);
-            label6.Name = "label6";
-            label6.Size = new Size(0, 15);
-            label6.TabIndex = 2;
-            label6.Text = "En kısa kelime";
+            lblBoslukDahil.AutoSize = true;
+            lblBoslukDahil.Location = new Point(98, 197);
+            lblBoslukDahil.Name = "lblBoslukDahil";
+            lblBoslukDahil.Size = new Size(153, 15);
+            lblBoslukDahil.TabIndex = 5;
+            lblBoslukDahil.Text = "Boşluk Dahil Karakter Sayısı ";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(614, 351);
+            ClientSize = new Size(800, 450);
             Controls.Add(textBox1);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label4);
-            Controls.Add(label1);
+            Controls.Add(lblKisa);
+            Controls.Add(lblUzun);
+            Controls.Add(lblBosluk);
+            Controls.Add(lblKelime);
+            Controls.Add(lblKarakter);
+            Controls.Add(lblBoslukDahil);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -120,12 +120,12 @@
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private Label label3;
         private TextBox textBox1;
-        private Label label4;
-        private Label label5;
-        private Label label6;
+        private Label lblKisa;
+        private Label lblUzun;
+        private Label lblBosluk;
+        private Label lblKelime;
+        private Label lblKarakter;
+        private Label lblBoslukDahil;
     }
 }

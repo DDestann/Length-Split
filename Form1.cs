@@ -11,89 +11,79 @@ using System.Windows.Forms;
 
 namespace LengthKullanımı
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
 
-
-
-        int BoslukDahil = 0;
-        int KelimeSayisi = 0;
-        int uzunluk = 0;
-        string UzunKelime = null;
-
+        string Cumle = "";
+        string Bosluk = "";
+        string Karakter = "";
+        string[] KelimeDizi;
+        string UzunKelime = "";
+        string KisaKelime = "";
+        int Uzun = 0;
+        int Kisa = 0;
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
-
-            BoslukDahil = textBox1.Text.Length;
-            label1.Text = "Boşluk Dahil Karakter Sayısı " + BoslukDahil.ToString();
-
-           
-           
-
             List<string> Kelimeler = new List<string>();
-
-            int Bosluk = 0;
-            for (int i = 0; i < textBox1.Text.Length; i++)
-            {
-                if (textBox1.Text[i] == ' ')
-                {
-                    Bosluk++;
-                    Kelimeler.Add(textBox1.Text[i].ToString());
-                }
-               
-
-
-            }
-            label3.Text = "boşluk " + Bosluk;
-
-            label2.Text = "Kelime Sayısı " + Kelimeler.Count().ToString();
-
-            if (Bosluk > 0)
-            {
-                label4.Text = "Karakter Sayısı " + (BoslukDahil - Bosluk).ToString();
-            }
-
-
-
-            string[] Kelime = textBox1.Text.Split(' ');
-
             List<int> Kelimelength = new List<int>();
 
-            foreach (string item in Kelime)
+            Bosluk = (textBox1.Text.Split(' ').Length - 1).ToString(); //Boşluk
+            Cumle = (textBox1.Text.Length).ToString();//Tüm Karakterler boşuk Dahil
+
+            Karakter = (int.Parse(Cumle) - int.Parse(Bosluk)).ToString();//Sadece Karakter
+
+            lblBoslukDahil.Text = "Tüm Karakterler boşuk Dahil " + " / " + Cumle;
+            lblKarakter.Text = "Sadece Karakter " + " / " + Karakter;
+            lblBosluk.Text = "Boşluk " + " / " + Bosluk;
+
+
+            KelimeDizi = textBox1.Text.Split(' ');
+
+            for (int i = 0; i < KelimeDizi.Length; i++)
             {
-
-
-                if (item.Length > uzunluk)
+                if (Cumle.Contains(KelimeDizi[i]) == false)
                 {
-                   // UzunKelime = item;
-                    uzunluk = item.Length;
-
+                    Kelimeler.Add(KelimeDizi[i]);
                 }
+            }
 
-                Kelimelength.Add(item.Length);
+            lblKelime.Text = "Kelime Sayısı " + " / " + Kelimeler.Count().ToString();//Kelime Sayısı
+
+
+
+            foreach (var item in Kelimeler) //Uzun Kelime
+            {
+                if (item.Length > Uzun)
+                {
+
+                    Uzun = item.Length;
+                }
+                if (item.Length > 0)
+                {
+                    Kelimelength.Add(item.Length);
+                }
 
             }
 
             Kelimelength.Sort();
 
-
-            for (int i = 0; i < Kelimelength.Count; i++)
+            if (Kelimelength.Count > 0)
             {
-                if (Kelimelength[i] > 0)
-                {
-                    label6.Text = "En kısa Kelime/Karakter sayısı= " + Kelimelength[i].ToString();
-                    break;
-                }
+                Kisa = Kelimelength[0];
             }
 
 
-            label5.Text = /*UzunKelime + " / "*/ "En Uzun Kelime/Karakter sayısı= " + uzunluk.ToString();
+
+            lblKisa.Text = "Kisa Kelime Karakter Sayısı " + "/ " + Kisa.ToString();
+
+
+            lblUzun.Text = "Uzun Kelime Karakter Sayısı " + "/ " + Uzun.ToString();
+
 
 
 
